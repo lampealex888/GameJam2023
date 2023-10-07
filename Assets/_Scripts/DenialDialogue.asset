@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e098e0d803f20141828f694676357fc, type: 3}
+  m_Name: DenialDialogue
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - dialogue: "Grandpa Rick wouldn\u2019t just disappear without saying anything.
+      He must have left something behind. A clue or a note or something!"
+    speaker: Carl
+  - dialogue: "1984 by George Orwell. Grandpa was really into this book. Looks like
+      he only made it halfway through. He didn\u2019t get to finish it\u2026 But
+      he\u2019ll be able to read the ending as soon as I find him and bring him back!"
+    speaker: Carl
+  - dialogue: "Grandpa\u2019s 78th birthday balloon! That party was so much fun.
+      Everybody in the family came! The balloon is looking a little deflated now
+      though. It was only 2 weeks ago but I already can\u2019t wait for Grandpa\u2019s
+      79th birthday party! I bet that one will blow the roof off!"
+    speaker: Carl
+  - dialogue: "Every Saturday morning when I come to visit, Grandpa and I have a
+      toasted everything bagel with cream cheese on top. I never used to like cream
+      cheese until Grandpa put it on a bagel for me. It was his favorite food of
+      all time. When I find him, I\u2019m gonna make him a million bagels with pounds
+      of cream cheese on top!"
+    speaker: Carl
+  - dialogue: "There\u2019s nothing here at all. Everything is exactly the same as
+      it was when I was here last Saturday. But there\u2019s gotta be something.
+      Something that I\u2019m missing\u2026 the attic!"
+    speaker: Carl
+  - dialogue: "Grandpa never let me come up here. He said that the attic was just
+      where he kept all his old junk and that I shouldn\u2019t wander around up here
+      by myself. But this is an emergency! I\u2019m sure he\u2019ll forgive me once
+      I find him."
+    speaker: Carl
+  - dialogue: "What is this thing? It looks like an amulet of some kind\u2026 Hey
+      wait a minute! I recognize this amulet! My grandpa wore it all the time! What
+      is it doing up here in the attic?"
+    speaker: Carl
+  - dialogue: "Woah! What\u2019s going on?"
+    speaker: Carl
+  - dialogue: "I feel\u2026 different\u2026 Ahh! What happened to me? I\u2019m old!
+      Wait\u2026 I\u2019m\u2026 I'm... Grandpa Rick??! What is going on!!"
+    speaker: Carl
+  - dialogue: AAAAAHHHHH!
+    speaker: Carl

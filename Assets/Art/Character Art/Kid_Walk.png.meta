@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 990b59807c8e84a6fa4ea6dee8d73f15
+guid: 666566d9ed53f45f893a5578cd2df5f2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Indy_Idle_0
+      name: Kid_Walk_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 32
-        height: 48
+        y: 128
+        width: 128
+        height: 128
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df69090af94534992b21d296d5c8b641
-      internalID: 475613905
+      spriteID: 11a2e5acbd26c4e93a13bda3650a9e75
+      internalID: -1592173217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Idle_1
+      name: Kid_Walk_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 48
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0ab397dc461749888951ff122afe78d
-      internalID: 1384203472
+      spriteID: a9afc5c1519a74475b15c6b146e67830
+      internalID: 2126459186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kid_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e179145c8d724e29a73e8e57c241e34
+      internalID: 2004121641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kid_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3088296cbd241f080960b5119aed9b
+      internalID: -200418496
       vertices: []
       indices: 
       edges: []
@@ -162,8 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Indy_Idle_0: 475613905
-      Indy_Idle_1: 1384203472
+      Kid_Walk_0: -1592173217
+      Kid_Walk_1: 2126459186
+      Kid_Walk_2: 2004121641
+      Kid_Walk_3: -200418496
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

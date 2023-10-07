@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fedad6f12b1214bc9b8a5eb0ba701a51
+guid: d9c872e43fb6d4dfcb2fedd35166f507
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Indy_Turn_0
+      name: Indy_Turn-2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 32
-        height: 48
+        y: 384
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c3650b4ab4094e64b6af11f76c5b72f
-      internalID: -2127864920
+      spriteID: 95c37df7716a447d880e5a6ebfe232b7
+      internalID: -768694271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Turn_1
+      name: Indy_Turn-2_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 48
+        x: 128
+        y: 384
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f91fdb8336f94aad8c7e9fe07c2260d
-      internalID: 1917028507
+      spriteID: cd060ea0c29a94287a369b8fe697055c
+      internalID: 1829223573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Turn_2
+      name: Indy_Turn-2_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 48
+        x: 256
+        y: 384
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64fdbeb740d04490b9ea06227e32eeab
-      internalID: 176504994
+      spriteID: f3bdbf891e4b6431cb3ea6e1938b4bb2
+      internalID: -1362456409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Turn_3
+      name: Indy_Turn-2_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 32
-        height: 48
+        y: 192
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cfae53658e984adbad072830a337683
-      internalID: 1427518397
+      spriteID: 1df3cbd8119fe4e16ad9b4fc9ef27f78
+      internalID: 1260193051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Turn_4
+      name: Indy_Turn-2_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
-        width: 32
-        height: 48
+        x: 128
+        y: 192
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12c2f007a648f4460b792134d4459afa
-      internalID: 1189650274
+      spriteID: 1ad02642bc6b740d8a86cc062d77f14f
+      internalID: -1496127972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Turn_5
+      name: Indy_Turn-2_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
-        width: 32
-        height: 48
+        x: 256
+        y: 192
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3392f23c5215145fc8b443bd08b3c8e9
-      internalID: -724860466
+      spriteID: b83460d56a9d943119e04c6e40e8ae32
+      internalID: 1941103664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Turn_6
+      name: Indy_Turn-2_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 48
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d71eecec75e2246b4af84b47f3e8db35
-      internalID: 2024118101
+      spriteID: b2d94a140781144f2ae6e77755afa20e
+      internalID: -1087807640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Turn_7
+      name: Indy_Turn-2_7
       rect:
         serializedVersion: 2
-        x: 32
+        x: 128
         y: 0
-        width: 32
-        height: 48
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09acd66feb9eb47fcbe825a05b90b23b
-      internalID: -1826178281
+      spriteID: f61f6b686c05e4d65ae8ef6ba0a67044
+      internalID: -161926978
       vertices: []
       indices: 
       edges: []
@@ -288,14 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Indy_Turn_0: -2127864920
-      Indy_Turn_1: 1917028507
-      Indy_Turn_2: 176504994
-      Indy_Turn_3: 1427518397
-      Indy_Turn_4: 1189650274
-      Indy_Turn_5: -724860466
-      Indy_Turn_6: 2024118101
-      Indy_Turn_7: -1826178281
+      Indy_Turn-2_0: -768694271
+      Indy_Turn-2_1: 1829223573
+      Indy_Turn-2_2: -1362456409
+      Indy_Turn-2_3: 1260193051
+      Indy_Turn-2_4: -1496127972
+      Indy_Turn-2_5: 1941103664
+      Indy_Turn-2_6: -1087807640
+      Indy_Turn-2_7: -161926978
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

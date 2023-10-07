@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2b70c53468d574feca670ee1573eef2e
+guid: 1f694e7c70d7a416680505f486180e6f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Indy_Press_0
+      name: Indy_Jump-2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 32
-        height: 48
+        y: 384
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed531e84876894051aceb6fac86d521b
-      internalID: -518815017
+      spriteID: 06ebb838497f8440c877fa3cdfad75d9
+      internalID: 1353435829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Press_1
+      name: Indy_Jump-2_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 48
+        x: 128
+        y: 384
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84bcdcb853ee64be881d7274b6f0e978
-      internalID: -968060714
+      spriteID: 562359d7297734ffeb9125402bcc1910
+      internalID: 887765927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Press_2
+      name: Indy_Jump-2_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 48
+        x: 256
+        y: 384
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1a7f4efa1829413cb609c54381075cf
-      internalID: 1187682428
+      spriteID: 5da4412d47b1248ce81b7347ded6a423
+      internalID: 510996046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Press_3
+      name: Indy_Jump-2_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 32
-        height: 48
+        y: 192
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2298806a539541cda68cd25d98a069a
-      internalID: -1878013937
+      spriteID: 325fdf59763e04df5b5e639ae5ae276d
+      internalID: -305788209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Press_4
+      name: Indy_Jump-2_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
-        width: 32
-        height: 48
+        x: 128
+        y: 192
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b84ce224e29749ad9adbf5e87a3eea7
-      internalID: -2078061538
+      spriteID: f5e4d7dd2493e4fec839d9f756e9823a
+      internalID: -60418184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Press_5
+      name: Indy_Jump-2_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
-        width: 32
-        height: 48
+        x: 256
+        y: 192
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec09fe10a0d184ede8175a98224b8f2f
-      internalID: 2126643192
+      spriteID: bfb07edffd9da43019a1f123501bbda1
+      internalID: 1122896568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Press_6
+      name: Indy_Jump-2_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 48
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,8 +250,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b292cc779d784c73bdce2cea0d7cb08
-      internalID: -1236544924
+      spriteID: bebe96fe17534465f87965327a8ccd3d
+      internalID: 222334034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indy_Jump-2_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 192
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac85a48a009744bdb3ac645c53bff36
+      internalID: 356425187
       vertices: []
       indices: 
       edges: []
@@ -267,13 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Indy_Press_0: -518815017
-      Indy_Press_1: -968060714
-      Indy_Press_2: 1187682428
-      Indy_Press_3: -1878013937
-      Indy_Press_4: -2078061538
-      Indy_Press_5: 2126643192
-      Indy_Press_6: -1236544924
+      Indy_Jump-2_0: 1353435829
+      Indy_Jump-2_1: 887765927
+      Indy_Jump-2_2: 510996046
+      Indy_Jump-2_3: -305788209
+      Indy_Jump-2_4: -60418184
+      Indy_Jump-2_5: 1122896568
+      Indy_Jump-2_6: 222334034
+      Indy_Jump-2_7: 356425187
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

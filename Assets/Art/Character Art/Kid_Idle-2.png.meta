@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 779ff50f7e7424a02aedb2403e97e087
+guid: a618857da3fdf4f349a7c2e5985c3154
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kid_run_sheey_0
+      name: Kid_Idle-2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 128
+        width: 128
+        height: 128
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,41 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f09583402226a41eba77738e97eafc27
-      internalID: 1567321207
+      spriteID: da06832ea0226439baf75ec1016ab4f5
+      internalID: 1078004172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kid_run_sheey_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 559c717b7a5dc4ebbba7e3dcd42493ea
-      internalID: -506646964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kid_run_sheey_2
+      name: Kid_Idle-2_1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 128
+        height: 128
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,29 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fe7b54b9fb5b45779280afb85fd48a5
-      internalID: -994705842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kid_run_sheey_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 194075fd4bc204e9ab45d098e10d01af
-      internalID: 1876218429
+      spriteID: 36b75e50ad99441f4b7a4e4a831c5677
+      internalID: 578342289
       vertices: []
       indices: 
       edges: []
@@ -204,10 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Kid_run_sheey_0: 1567321207
-      Kid_run_sheey_1: -506646964
-      Kid_run_sheey_2: -994705842
-      Kid_run_sheey_3: 1876218429
+      Kid_Idle-2_0: 1078004172
+      Kid_Idle-2_1: 578342289
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

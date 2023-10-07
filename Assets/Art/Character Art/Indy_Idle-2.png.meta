@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8fbf71fc237df44639d8fa7cd48b2df2
+guid: db3b41f07978847608885d583e802d99
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,55 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kid_Jump_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45f052b82ba59402fbe7cfca6ebab320
-      internalID: 1687906987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kid_Jump_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e84ca98b3546c49bb8a37f8f2129e332
-      internalID: -1425317584
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kid_Jump_2
+      name: Indy_Idle-2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18bc054d60ebe4e8c955bf79704e1bd2
-      internalID: 1594449648
+      spriteID: f3019ce0d85224f80821f964743444ef
+      internalID: -296764375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kid_Jump_3
+      name: Indy_Idle-2_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 128
         y: 0
-        width: 32
-        height: 32
+        width: 128
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13d33a7f622754e44ba3de411a80caf3
-      internalID: -1146939122
+      spriteID: 4265a542b4ec749cdb8e04053089d9ea
+      internalID: 139671637
       vertices: []
       indices: 
       edges: []
@@ -204,10 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Kid_Jump_0: 1687906987
-      Kid_Jump_1: -1425317584
-      Kid_Jump_2: 1594449648
-      Kid_Jump_3: -1146939122
+      Indy_Idle-2_0: -296764375
+      Indy_Idle-2_1: 139671637
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

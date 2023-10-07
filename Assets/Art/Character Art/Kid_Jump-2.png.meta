@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f328c6203ac0f426e8b12918c0d0c3f6
+guid: 2d791fe558afd4c73a31b6ea24a90fca
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Indy_Walk_0
+      name: Kid_Jump-2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 32
-        height: 48
+        y: 128
+        width: 128
+        height: 128
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee9f167b4fea145558a56bfd7177d845
-      internalID: 1623027812
+      spriteID: bcd1511f249ec45a187eae557138758d
+      internalID: 288345631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Walk_1
+      name: Kid_Jump-2_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 48
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,104 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ba6400729e424d018c0c42dc22fcddf
-      internalID: -207826029
+      spriteID: 895218034cfdc4dad960b981a2f48ee4
+      internalID: -625766857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Walk_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68aed73711624452eaaad8c150dba0ea
-      internalID: -1350784292
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Indy_Walk_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 32
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8ceec992394b4751badf6720b7ea1eb
-      internalID: 58114604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Indy_Walk_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 32
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: caba4ad8a5d0341aa9e6b416c76780c2
-      internalID: -879359784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Indy_Walk_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 48
-        width: 32
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a8546ab06a2c4707b9d32e58061aeee
-      internalID: 1707829375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Indy_Walk_6
+      name: Kid_Jump-2_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 48
+        width: 128
+        height: 128
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c696d133a46114d32a30429c27d5df02
-      internalID: -851299298
+      spriteID: bb9db3fc9cb1449e9a333bf6d348d329
+      internalID: -438766954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Indy_Walk_7
+      name: Kid_Jump-2_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 128
         y: 0
-        width: 32
-        height: 48
+        width: 128
+        height: 128
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 624c7088771964ca3aecdecb76f62144
-      internalID: -428403255
+      spriteID: bdccd2f94f9514dfd93100585f9e8732
+      internalID: 870893887
       vertices: []
       indices: 
       edges: []
@@ -288,14 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Indy_Walk_0: 1623027812
-      Indy_Walk_1: -207826029
-      Indy_Walk_2: -1350784292
-      Indy_Walk_3: 58114604
-      Indy_Walk_4: -879359784
-      Indy_Walk_5: 1707829375
-      Indy_Walk_6: -851299298
-      Indy_Walk_7: -428403255
+      Kid_Jump-2_0: 288345631
+      Kid_Jump-2_1: -625766857
+      Kid_Jump-2_2: -438766954
+      Kid_Jump-2_3: 870893887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

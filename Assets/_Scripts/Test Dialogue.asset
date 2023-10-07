@@ -13,6 +13,13 @@ MonoBehaviour:
   m_Name: Test Dialogue
   m_EditorClassIdentifier: 
   dialogueLines:
-  - dialogue: "This is the first line.\t"
-  - dialogue: This is the second line.
-  - dialogue: This is the third line.
+  - dialogue: "Grandpa I don\u2019t wanna leave. It\u2019s boring back at home. Here
+      we watch movies and eat lots of takeout and go out for ice cream. But back
+      home all I get to do is take out the trash and clean my room."
+    speaker: Kid
+  - dialogue: "You coming to visit is the best part of my days, Carl. But at some
+      point you have to go see your parents, you know. They love you just as much
+      as I do. \r\r\n"
+    speaker: Grandpa
+  - dialogue: "Yeah but you don\u2019t make me do chores. "
+    speaker: Kid

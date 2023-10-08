@@ -29,6 +29,7 @@ TagManager:
   - CorrectPlate
   - Bolt
   - LeverOff
+  - Gravestone
   layers:
   - Default
   - TransparentFX

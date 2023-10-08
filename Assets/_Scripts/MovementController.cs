@@ -5,15 +5,14 @@ using UnityEngine;
 public class MovementController : MonoBehaviour
 {
     private float horizontal;
-    public float speed = 0.25f;
+    public float speed = 0.1f;
     public float jumpVelocity = 10f;
-    private bool isFacingRight = true;
+    private bool isFacingRight = false;
     private bool _jump = false;
     private BoxCollider2D boxCol2d;
-
     private Rigidbody2D rb2d;
-
-    public DialogueDisplayer dialogue;
+    public Animator animator;
+    public bool IsOldMan = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,10 +25,17 @@ public class MovementController : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         // Debug.Log(horizontal);
+        animator.SetFloat("Speed", Mathf.Abs(horizontal));
+        Flip();
         if ((IsGrounded() && (Input.GetKeyDown(KeyCode.UpArrow)) || (IsGrounded() && Input.GetKeyDown(KeyCode.W))))
         {
             _jump = true;
         }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+
+        }
+        Transform();
     }
 
     // This is where you're going to put things related to physics!!
@@ -49,6 +55,11 @@ public class MovementController : MonoBehaviour
         {
             rb2d.velocity = Vector2.up * jumpVelocity;
             _jump = false;
+            animator.SetBool("isJumping", true);
+        }
+        else if (IsGrounded() == true)
+        {
+            animator.SetBool("isJumping", false);
         }
     }
 
@@ -61,14 +72,42 @@ public class MovementController : MonoBehaviour
         //returns true if box collider hits something
         return (raycastHit2d.collider != null);
     }
-    private void OnTriggerEnter2D(Collider2D collider)
+
+    void Flip()
     {
-        Debug.Log("hello");
-        if (collider.CompareTag("Book"))
+        if ((isFacingRight && horizontal < 0f) || (!isFacingRight && horizontal > 0f))
         {
-            GameObject bookObject = collider.gameObject;
-            dialogue.currentDialogue = bookObject.GetComponent<BookScript>().dialogue;
-            dialogue.DisplayDialogue(dialogue.currentDialogue);
+            isFacingRight = !isFacingRight;
+            Vector2 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
+        }
+    }
+
+    public void Transform()
+    {
+        if (Input.GetKeyDown(KeyCode.Q) && this.gameObject.GetComponent<PlayerData>().ability_unlocked == true)
+        {
+            if (IsOldMan == false)
+            {
+                IsOldMan = true;
+            }
+            else
+            {
+                IsOldMan = false;
+            }
+        }
+        if (IsOldMan == true)
+        {
+            speed = 0.05f;
+            jumpVelocity = 5f;
+            animator.SetBool("isOld", true);
+        }
+        else
+        {
+            speed = 0.1f;
+            jumpVelocity = 10f;
+            animator.SetBool("isOld", false);
         }
     }
 }

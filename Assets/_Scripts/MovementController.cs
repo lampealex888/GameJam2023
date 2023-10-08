@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; // Add me!!
 
 public class MovementController : MonoBehaviour
 {
@@ -11,20 +10,11 @@ public class MovementController : MonoBehaviour
     private bool isFacingRight = false;
     private bool _jump = false;
     private BoxCollider2D boxCol2d;
-
     private Rigidbody2D rb2d;
-
-    public DialogueDisplayer dialogue;
-    public bool book = false;
-    public bool balloon = false;
-    public bool bagels = false;
-    public bool stairs = false;
-    public bool attic = false;
-    public bool amulet = false;
-    public bool amulet2 = false;
-    public bool desk = false;
-    
     public Animator animator;
+    public bool IsOldMan = false;
+    public Sprite oldManSprite;
+    public Sprite youngKidSprite;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +33,11 @@ public class MovementController : MonoBehaviour
         {
             _jump = true;
         }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+
+        }
+        Transform();
     }
 
     // This is where you're going to put things related to physics!!
@@ -64,7 +59,8 @@ public class MovementController : MonoBehaviour
             _jump = false;
             animator.SetBool("isJumping", true);
         }
-        else if (IsGrounded()==true) {
+        else if (IsGrounded() == true)
+        {
             animator.SetBool("isJumping", false);
         }
     }
@@ -90,107 +86,30 @@ public class MovementController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    public void Transform()
     {
-        if (collider.CompareTag("Book"))
+        if (Input.GetKeyDown(KeyCode.Q) && this.gameObject.GetComponent<PlayerData>().ability_unlocked == true)
         {
-            if (book == false)
+            if (IsOldMan == false)
             {
-                GameObject BookObject = collider.gameObject;
-                dialogue.currentDialogue = BookObject.GetComponent<BookScript>().dialogue;
-                dialogue.DisplayDialogue(dialogue.currentDialogue);
-                book = true;
+                IsOldMan = true;
+            }
+            else
+            {
+                IsOldMan = false;
             }
         }
-        else if (collider.CompareTag("Balloon"))
+        if (IsOldMan == true)
         {
-            if (balloon == false)
-            {
-                GameObject BalloonObject = collider.gameObject;
-                dialogue.currentDialogue = BalloonObject.GetComponent<BalloonScript>().dialogue;
-                dialogue.DisplayDialogue(dialogue.currentDialogue);
-                balloon = true;
-            }
+            speed = 0.05f;
+            jumpVelocity = 5f;
+            animator.SetBool("isOld", true);
         }
-        else if (collider.CompareTag("Bagel"))
+        else
         {
-            if (bagels == false)
-            {
-                GameObject BagelObject = collider.gameObject;
-                dialogue.currentDialogue = BagelObject.GetComponent<BagelsScript>().dialogue;
-                dialogue.DisplayDialogue(dialogue.currentDialogue);
-                bagels = true;
-            }
+            speed = 0.1f;
+            jumpVelocity = 10f;
+            animator.SetBool("isOld", false);
         }
-        else if (collider.CompareTag("Stairs"))
-        {
-            if (stairs == false)
-            {
-                GameObject StairsObject = collider.gameObject;
-                dialogue.currentDialogue = StairsObject.GetComponent<StairsScript>().dialogue;
-                dialogue.DisplayDialogue(dialogue.currentDialogue);
-                stairs = true;
-            }
-        }
-        else if (collider.CompareTag("Attic"))
-        {
-            if (attic == false)
-            {
-                GameObject AtticObject = collider.gameObject;
-                dialogue.currentDialogue = AtticObject.GetComponent<AtticScript>().dialogue;
-                dialogue.DisplayDialogue(dialogue.currentDialogue);
-                attic = true;
-            }
-        }
-        else if (collider.CompareTag("Amulet"))
-        {
-            if (amulet == false)
-            {
-                GameObject AmuletObject = collider.gameObject;
-                dialogue.currentDialogue = AmuletObject.GetComponent<AmuletScript>().dialogue;
-                dialogue.DisplayDialogue(dialogue.currentDialogue);
-                amulet = true;
-            }
-        }
-        // else if (collider.CompareTag("WhiteScreen") && desk == true)
-        // {
-        //     GameObject WhiteScreenObject = collider.gameObject;
-        //     WhiteScreenObject.SetActive(true);
-        //     SceneManager.LoadScene(2);
-        // }
-    }
-
-    private void OnTriggerStay2D(Collider2D collider)
-    {
-        if (collider.CompareTag("Amulet") && Input.GetKeyDown(KeyCode.E))
-        {
-            if (amulet2 == false)
-            {
-                GameObject AmuletObject = collider.gameObject;
-                dialogue.currentDialogue = AmuletObject.GetComponent<AmuletScript>().dialogue2;
-                dialogue.DisplayDialogue(dialogue.currentDialogue);
-                amulet2 = true;
-                AmuletObject.SetActive(false);
-            }
-        }
-        else if (collider.CompareTag("Desk") && amulet2 == true)
-        {
-            if (desk == false)
-            {
-                GameObject DeskObject = collider.gameObject;
-                DeskObject.GetComponent<SpriteRenderer>().enabled = true;
-                desk = true;
-                // PickUpAmulet(DeskObject);
-                SceneManager.LoadScene(2);
-            }
-        }
-    }
-    private IEnumerable PickUpAmulet(GameObject Desk)
-    {
-        Debug.Log("Testing");
-        yield return new WaitForSeconds(3);
-        dialogue.currentDialogue = Desk.GetComponent<DeskScript>().dialogue;
-        dialogue.DisplayDialogue(dialogue.currentDialogue);
-        
     }
 }

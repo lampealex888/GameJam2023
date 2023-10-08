@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e098e0d803f20141828f694676357fc, type: 3}
+  m_Name: L2(6)
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - dialogue: I remember this day. Grandparents day. I drew this picture for my grandpa.
+      He was so happy when he got to the school and I showed it to him.
+    speaker: Carl
+  - dialogue: We walked around the whole school and I got to show him all my friends
+      and my school projects.
+    speaker: Carl
+  - dialogue: It was so much fun.
+    speaker: Carl
+  - dialogue: "My Grandpa had fun too. In fact, I\u2019m sure he did. So if he enjoyed
+      spending time with me so much, then why did he leave?"
+    speaker: Carl
+  - dialogue: How could he just leave me like that? Stupid Grandpa Rick!
+    speaker: Carl

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e098e0d803f20141828f694676357fc, type: 3}
-  m_Name: AngerDialogue
+  m_Name: L2(5)
   m_EditorClassIdentifier: 
   dialogueLines:
-  - dialogue: "Yeah, this is definitely my school\u2026 on Grandparents day! But
-      that happened like 2 months ago!"
+  - dialogue: "I know what to do now! It feels like I\u2019ve known how to do this
+      forever\u2026"
     speaker: Carl

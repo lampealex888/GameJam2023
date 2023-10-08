@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e098e0d803f20141828f694676357fc, type: 3}
+  m_Name: ClosingCutscene
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - dialogue: "For some reason, I always thought that without my Grandpa, I wouldn\u2019t
+      be okay. He was the one who would always help me with everything in my life."
+    speaker: Carl
+  - dialogue: "I know now, though, that I will be okay. I\u2019ll be okay without
+      him."
+    speaker: Carl
+  - dialogue: "I\u2019ll be able to do things on my own. My Grandpa is able to rest
+      now, and I\u2019ll keep going on."
+    speaker: Carl
+  - dialogue: "I know that\u2019s what he would want me to do."
+    speaker: Carl
+  - dialogue: "You don\u2019t have to worry about me Grandpa. I can do things on
+      my own now. I\u2019ll be okay. I love you."
+    speaker: Carl

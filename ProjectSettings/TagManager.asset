@@ -30,6 +30,7 @@ TagManager:
   - Bolt
   - LeverOff
   - Gravestone
+  - Globe
   layers:
   - Default
   - TransparentFX

@@ -38,6 +38,10 @@ public class PlayerData : MonoBehaviour
     private bool L5start = false;
     private bool L5end = false;
 
+
+    public GameObject box1;
+    public GameObject box2;
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
         // Opener collisions
@@ -261,7 +265,7 @@ public class PlayerData : MonoBehaviour
                 ability_unlocked = true;
             }
         }
-        else if (collider.CompareTag("LeverOff") && Input.GetKeyDown(KeyCode.E))
+        else if (collider.CompareTag("LeverOff") && Input.GetKeyDown(KeyCode.E) && this.GetComponent<MovementController>().IsOldMan == true)
         {
             if (leverOff == false)
             {
@@ -272,6 +276,10 @@ public class PlayerData : MonoBehaviour
                 leverOffObject.GetComponent<SpriteRenderer>().enabled = false;
                 leverOff = true;
 
+            }
+            if (leverOff == true){
+                box1.SetActive(false);
+                box2.SetActive(false);
             }
         }
         else if (collider.CompareTag("LeverOn"))
@@ -307,6 +315,9 @@ public class PlayerData : MonoBehaviour
                 this.transform.position = new Vector3(5.514f, -4.176f, 0);
             }
             
+        }
+        else if (collider.CompareTag("CorrectPlate") && this.GetComponent<MovementController>().IsOldMan == false){
+            this.transform.position = new Vector3(39.99f, -12.09f, 0);
         }
         // L4 collisions
         if (collider.CompareTag("L4Start"))

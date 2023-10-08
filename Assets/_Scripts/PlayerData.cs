@@ -276,33 +276,37 @@ public class PlayerData : MonoBehaviour
                 ability_unlocked = true;
             }
         }
-        //else if (collider.CompareTag("LeverOff") && Input.GetKeyDown(KeyCode.E) && this.GetComponent<MovementController>().IsOldMan == true)
-        //{
-        //    if (leverOff == false)
-        //    {
-                // GameObject L2StartObject = collider.gameObject;
-                // dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
-                // dialogue.DisplayDialogue(dialogue.currentDialogue);
-        //        GameObject leverOffObject = collider.gameObject;
-        //        leverOffObject.GetComponent<SpriteRenderer>().enabled = false;
-        //        leverOff = true;
-        //    }
-        //    if (leverOff == true){
-        //        box1.SetActive(false);
-        //        box2.SetActive(false);
-        //    }
-        //}
-        //else if (collider.CompareTag("LeverOn"))
-        //{
-        //    if (leverOff == true)
-        //    {
-                // GameObject L2StartObject = collider.gameObject;
-                // dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
-                // dialogue.DisplayDialogue(dialogue.currentDialogue);
-        //        GameObject leverOffObject = collider.gameObject;
-        //        leverOffObject.GetComponent<SpriteRenderer>().enabled = true;
-        //    }
-        //}
+        
+        else if (collider.CompareTag("LeverOff") && Input.GetKeyDown(KeyCode.E) && this.GetComponent<MovementController>().IsOldMan == true)
+        {
+            if (leverOff == false)
+           {
+                 //GameObject L2StartObject = collider.gameObject;
+                 //dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
+                 //dialogue.DisplayDialogue(dialogue.currentDialogue);
+                GameObject leverOffObject = collider.gameObject;
+                leverOffObject.GetComponent<SpriteRenderer>().enabled = false;
+                leverOff = true;
+            }
+            if (leverOff == true){
+                box1.SetActive(false);
+                box2.SetActive(false);
+            }
+        }
+        
+        /*
+        else if (collider.CompareTag("LeverOn"))
+        {
+            if (leverOff == true)
+            {
+                 GameObject L2StartObject = collider.gameObject;
+                 dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
+                 dialogue.DisplayDialogue(dialogue.currentDialogue);
+                GameObject leverOffObject = collider.gameObject;
+                leverOffObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
+        }
+        */
         /*
         else if (collider.CompareTag("L3DoorAClosed") && leverOff == true && L3DoorAClosed == false && Input.GetKeyDown(KeyCode.E))
         {
@@ -336,9 +340,9 @@ public class PlayerData : MonoBehaviour
         {
             if (L4start == false)
             {
-                // GameObject L2StartObject = collider.gameObject;
-                // dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
-                // dialogue.DisplayDialogue(dialogue.currentDialogue);
+                GameObject L2StartObject = collider.gameObject;
+                dialogue.currentDialogue = L2StartObject.GetComponent<L4Start>().dialogue;
+                dialogue.DisplayDialogue(dialogue.currentDialogue);
                 L4start = true;
                 ability_unlocked = true;
             }

@@ -37,6 +37,7 @@ public class PlayerData : MonoBehaviour
     // L5 variables
     private bool L5start = false;
     private bool L5end = false;
+    private bool Gravestone = false;
 
 
     public GameObject box1;
@@ -171,6 +172,16 @@ public class PlayerData : MonoBehaviour
                 SceneManager.LoadScene(7);
             }
         }
+        else if (collider.CompareTag("Gravestone"))
+        {
+            if (Gravestone == false)
+            {
+                GameObject GravestoneObject = collider.gameObject;
+                dialogue.currentDialogue = GravestoneObject.GetComponent<Gravestone>().dialogue;
+                dialogue.DisplayDialogue(dialogue.currentDialogue);
+                Gravestone = true;
+            }
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collider)
@@ -265,34 +276,34 @@ public class PlayerData : MonoBehaviour
                 ability_unlocked = true;
             }
         }
-        else if (collider.CompareTag("LeverOff") && Input.GetKeyDown(KeyCode.E) && this.GetComponent<MovementController>().IsOldMan == true)
-        {
-            if (leverOff == false)
-            {
+        //else if (collider.CompareTag("LeverOff") && Input.GetKeyDown(KeyCode.E) && this.GetComponent<MovementController>().IsOldMan == true)
+        //{
+        //    if (leverOff == false)
+        //    {
                 // GameObject L2StartObject = collider.gameObject;
                 // dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
                 // dialogue.DisplayDialogue(dialogue.currentDialogue);
-                GameObject leverOffObject = collider.gameObject;
-                leverOffObject.GetComponent<SpriteRenderer>().enabled = false;
-                leverOff = true;
-
-            }
-            if (leverOff == true){
-                box1.SetActive(false);
-                box2.SetActive(false);
-            }
-        }
-        else if (collider.CompareTag("LeverOn"))
-        {
-            if (leverOff == true)
-            {
+        //        GameObject leverOffObject = collider.gameObject;
+        //        leverOffObject.GetComponent<SpriteRenderer>().enabled = false;
+        //        leverOff = true;
+        //    }
+        //    if (leverOff == true){
+        //        box1.SetActive(false);
+        //        box2.SetActive(false);
+        //    }
+        //}
+        //else if (collider.CompareTag("LeverOn"))
+        //{
+        //    if (leverOff == true)
+        //    {
                 // GameObject L2StartObject = collider.gameObject;
                 // dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
                 // dialogue.DisplayDialogue(dialogue.currentDialogue);
-                GameObject leverOffObject = collider.gameObject;
-                leverOffObject.GetComponent<SpriteRenderer>().enabled = true;
-            }
-        }
+        //        GameObject leverOffObject = collider.gameObject;
+        //        leverOffObject.GetComponent<SpriteRenderer>().enabled = true;
+        //    }
+        //}
+        /*
         else if (collider.CompareTag("L3DoorAClosed") && leverOff == true && L3DoorAClosed == false && Input.GetKeyDown(KeyCode.E))
         {
             if (L3DoorAClosed == false)
@@ -316,6 +327,7 @@ public class PlayerData : MonoBehaviour
             }
             
         }
+        */
         else if (collider.CompareTag("CorrectPlate") && this.GetComponent<MovementController>().IsOldMan == false){
             this.transform.position = new Vector3(39.99f, -12.09f, 0);
         }
@@ -336,11 +348,11 @@ public class PlayerData : MonoBehaviour
         {
             if (L5start == false)
             {
-                // GameObject L2StartObject = collider.gameObject;
-                // dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
-                // dialogue.DisplayDialogue(dialogue.currentDialogue);
+                GameObject L5StartObject = collider.gameObject;
+                dialogue.currentDialogue = L5StartObject.GetComponent<L5Start>().dialogue;
+                dialogue.DisplayDialogue(dialogue.currentDialogue);
                 L5start = true;
-                ability_unlocked = true;
+                ability_unlocked = false;
             }
         }
     }

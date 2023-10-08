@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e098e0d803f20141828f694676357fc, type: 3}
-  m_Name: BookDialogue
+  m_Name: L1(3)
   m_EditorClassIdentifier: 
   dialogueLines:
-  - dialogue: "1984 by George Orwell. Grandpa was really into this book. Looks like
-      he only made it halfway through. He didn\u2019t get to finish it\u2026 But
-      he\u2019ll be able to read the ending as soon as I find him and bring him back!"
+  - dialogue: "Grandpa never let me come up here. He said that the attic was just
+      where he kept all his old junk and that I shouldn\u2019t ever go up here alone.
+      But this is an emergency! I\u2019m sure he\u2019ll forgive me once I find him."
     speaker: Carl

@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e098e0d803f20141828f694676357fc, type: 3}
-  m_Name: BookDialogue
+  m_Name: L1(Bagels)
   m_EditorClassIdentifier: 
   dialogueLines:
-  - dialogue: "1984 by George Orwell. Grandpa was really into this book. Looks like
-      he only made it halfway through. He didn\u2019t get to finish it\u2026 But
-      he\u2019ll be able to read the ending as soon as I find him and bring him back!"
+  - dialogue: "Every Saturday morning when I come to visit, Grandpa and I would have
+      a toasted everything bagel with cream cheese. I never used to like cream cheese
+      until Grandpa told me to try it. It was his favorite food of all time. When
+      I find him, I\u2019m gonna make him a million bagels with pounds of cream cheese
+      on top!"
     speaker: Carl

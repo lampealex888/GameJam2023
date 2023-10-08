@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e098e0d803f20141828f694676357fc, type: 3}
-  m_Name: BookDialogue
+  m_Name: L1(4)
   m_EditorClassIdentifier: 
   dialogueLines:
-  - dialogue: "1984 by George Orwell. Grandpa was really into this book. Looks like
-      he only made it halfway through. He didn\u2019t get to finish it\u2026 But
-      he\u2019ll be able to read the ending as soon as I find him and bring him back!"
+  - dialogue: "What is this thing? It looks like an amulet of some kind\u2026 hey
+      wait a minute! I recognize this! My grandpa wore it all the time! Why is it
+      up here in the attic?"
     speaker: Carl

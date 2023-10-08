@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 450857462728562079}
   - component: {fileID: 1390218295489538111}
   - component: {fileID: 8779146228539508901}
+  - component: {fileID: 106765186914749520}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -171,5 +172,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6c2b96dbb9c04ebc0c67f17ed6d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.25
+  speed: 0.1
   jumpVelocity: 10
+  dialogue: {fileID: 0}
+  book: 0
+  balloon: 0
+  bagels: 0
+  stairs: 0
+  attic: 0
+  amulet: 0
+  amulet2: 0
+  desk: 0
+  animator: {fileID: 106765186914749520}
+--- !u!95 &106765186914749520
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2686966874315870715}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba674fcf29edbf2418ceeaca9fcb645a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

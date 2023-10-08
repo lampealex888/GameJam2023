@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement; // Add me!!
 public class MovementController : MonoBehaviour
 {
     private float horizontal;
-    public float speed = 0.25f;
+    public float speed = 0.1f;
     public float jumpVelocity = 10f;
-    private bool isFacingRight = true;
+    private bool isFacingRight = false;
     private bool _jump = false;
     private BoxCollider2D boxCol2d;
 
@@ -23,6 +23,8 @@ public class MovementController : MonoBehaviour
     public bool amulet = false;
     public bool amulet2 = false;
     public bool desk = false;
+    
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +37,8 @@ public class MovementController : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         // Debug.Log(horizontal);
+        animator.SetFloat("Speed", Mathf.Abs(horizontal));
+        Flip();
         if ((IsGrounded() && (Input.GetKeyDown(KeyCode.UpArrow)) || (IsGrounded() && Input.GetKeyDown(KeyCode.W))))
         {
             _jump = true;
@@ -58,6 +62,10 @@ public class MovementController : MonoBehaviour
         {
             rb2d.velocity = Vector2.up * jumpVelocity;
             _jump = false;
+            animator.SetBool("isJumping", true);
+        }
+        else if (IsGrounded()==true) {
+            animator.SetBool("isJumping", false);
         }
     }
 
@@ -70,6 +78,18 @@ public class MovementController : MonoBehaviour
         //returns true if box collider hits something
         return (raycastHit2d.collider != null);
     }
+
+    void Flip()
+    {
+        if ((isFacingRight && horizontal < 0f) || (!isFacingRight && horizontal > 0f))
+        {
+            isFacingRight = !isFacingRight;
+            Vector2 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.CompareTag("Book"))

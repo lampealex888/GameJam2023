@@ -28,6 +28,9 @@ public class PlayerData : MonoBehaviour
     // L3 variables
     private bool L3start = false;
     private bool L3end = false;
+    private bool leverOff = false;
+    private bool L3DoorAClosed = false;
+    private bool L3DoorAOpen = false;
     // L4 variables
     private bool L4start = false;
     private bool L4end = false;
@@ -111,7 +114,7 @@ public class PlayerData : MonoBehaviour
             }
         }
         // L2 collisions
-        else if (collider.CompareTag("L2End"))
+        if (collider.CompareTag("L2End"))
         {
             if (end == false)
             {
@@ -180,7 +183,7 @@ public class PlayerData : MonoBehaviour
             }
         }
         // L1 collisions
-        else if (collider.CompareTag("Amulet") && Input.GetKeyDown(KeyCode.E))
+        if (collider.CompareTag("Amulet") && Input.GetKeyDown(KeyCode.E))
         {
             if (amulet2 == false)
             {
@@ -205,7 +208,7 @@ public class PlayerData : MonoBehaviour
             }
         }
         // L2 collisions
-        else if (collider.CompareTag("L2Start"))
+        if (collider.CompareTag("L2Start"))
         {
             if (start == false)
             {
@@ -217,7 +220,6 @@ public class PlayerData : MonoBehaviour
                 this.GetComponent<MovementController>().IsOldMan = true;
             }
         }
-        // TODO: ADD CHECK IF PLAYER IS OLD
         else if (collider.CompareTag("Keypad") && Input.GetKeyDown(KeyCode.E) && this.GetComponent<MovementController>().IsOldMan == true)
         {
             if (keypad == false)
@@ -248,7 +250,7 @@ public class PlayerData : MonoBehaviour
             }
         }
         // L3 collisions
-        else if (collider.CompareTag("L3Start"))
+        if (collider.CompareTag("L3Start"))
         {
             if (L3start == false)
             {
@@ -259,8 +261,55 @@ public class PlayerData : MonoBehaviour
                 ability_unlocked = true;
             }
         }
+        else if (collider.CompareTag("LeverOff") && Input.GetKeyDown(KeyCode.E))
+        {
+            if (leverOff == false)
+            {
+                // GameObject L2StartObject = collider.gameObject;
+                // dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
+                // dialogue.DisplayDialogue(dialogue.currentDialogue);
+                GameObject leverOffObject = collider.gameObject;
+                leverOffObject.GetComponent<SpriteRenderer>().enabled = false;
+                leverOff = true;
+
+            }
+        }
+        else if (collider.CompareTag("LeverOn"))
+        {
+            if (leverOff == true)
+            {
+                // GameObject L2StartObject = collider.gameObject;
+                // dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
+                // dialogue.DisplayDialogue(dialogue.currentDialogue);
+                GameObject leverOffObject = collider.gameObject;
+                leverOffObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
+        }
+        else if (collider.CompareTag("L3DoorAClosed") && leverOff == true && L3DoorAClosed == false && Input.GetKeyDown(KeyCode.E))
+        {
+            if (L3DoorAClosed == false)
+            {
+                GameObject L3DoorAClosedObject = collider.gameObject;
+                L3DoorAClosedObject.GetComponent<SpriteRenderer>().enabled = false;
+                L3DoorAClosed = true;
+            }
+        }
+        else if (collider.CompareTag("L3DoorAOpen") && L3DoorAClosed == true)
+        {
+            if (L3DoorAOpen == false)
+            {
+                GameObject L3DoorAOpenObject = collider.gameObject;
+                L3DoorAOpenObject.GetComponent<SpriteRenderer>().enabled = true;
+                L3DoorAOpen = true;
+            }
+            else if (L3DoorAOpen == true && Input.GetKeyDown(KeyCode.E))
+            {
+                this.transform.position = new Vector3(5.514f, -4.176f, 0);
+            }
+            
+        }
         // L4 collisions
-        else if (collider.CompareTag("L4Start"))
+        if (collider.CompareTag("L4Start"))
         {
             if (L4start == false)
             {
@@ -272,7 +321,7 @@ public class PlayerData : MonoBehaviour
             }
         }
         // L5 collisions
-        else if (collider.CompareTag("L5Start"))
+        if (collider.CompareTag("L5Start"))
         {
             if (L5start == false)
             {

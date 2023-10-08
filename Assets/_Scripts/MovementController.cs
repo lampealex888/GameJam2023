@@ -13,8 +13,6 @@ public class MovementController : MonoBehaviour
     private Rigidbody2D rb2d;
     public Animator animator;
     public bool IsOldMan = false;
-    public Sprite oldManSprite;
-    public Sprite youngKidSprite;
 
     // Start is called before the first frame update
     void Start()

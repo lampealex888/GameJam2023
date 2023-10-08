@@ -24,5 +24,23 @@ MonoBehaviour:
     speaker: Grandpa Rick
   - dialogue: "Yeah but you don\u2019t make me do chores like they do."
     speaker: Carl
-  - dialogue: 
+  - dialogue: 'Keep up the sass and I just might. '
     speaker: Grandpa Rick
+  - dialogue: Grandpa Rick!
+    speaker: Kid
+  - dialogue: " Run along now. I\u2019m feeling pretty tired anyway. Being around
+      youth like you really takes it out of me. "
+    speaker: Grandpa
+  - dialogue: Are you okay Grandpa? You do look a little pale.
+    speaker: Kid
+  - dialogue: "Oh I\u2019m fine. I\u2019m fine. Just feeling a little woozy I suppose.
+      Must have overdone it a bit. Now head on home so I can get some shut eye. \r"
+    speaker: Grandpa
+  - dialogue: "Okay Grandpa. I\u2019ll see you next Saturday though, right? \r"
+    speaker: Kid
+  - dialogue: "*1 week passes*\r"
+    speaker: Narrator
+  - dialogue: "But when I went back to Grandpa's house on Saturday, he wasn\u2019t
+      there. He was just\u2026 gone. He promised. And Grandpa never breaks his promises.
+      I knew that something was wrong. Wherever he was, I needed to find him! \r"
+    speaker: Kid (to himself)

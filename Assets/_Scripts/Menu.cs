@@ -16,6 +16,6 @@ public class Menu : MonoBehaviour
 
     public void OnCreditsButton()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(7);
     }
 }

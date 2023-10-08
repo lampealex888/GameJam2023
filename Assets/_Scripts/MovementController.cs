@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; // Add me!!
 
 public class MovementController : MonoBehaviour
 {
@@ -14,6 +15,14 @@ public class MovementController : MonoBehaviour
     private Rigidbody2D rb2d;
 
     public DialogueDisplayer dialogue;
+    public bool book = false;
+    public bool balloon = false;
+    public bool bagels = false;
+    public bool stairs = false;
+    public bool attic = false;
+    public bool amulet = false;
+    public bool amulet2 = false;
+    public bool desk = false;
 
     // Start is called before the first frame update
     void Start()
@@ -63,12 +72,105 @@ public class MovementController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("hello");
         if (collider.CompareTag("Book"))
         {
-            GameObject bookObject = collider.gameObject;
-            dialogue.currentDialogue = bookObject.GetComponent<BookScript>().dialogue;
-            dialogue.DisplayDialogue(dialogue.currentDialogue);
+            if (book == false)
+            {
+                GameObject BookObject = collider.gameObject;
+                dialogue.currentDialogue = BookObject.GetComponent<BookScript>().dialogue;
+                dialogue.DisplayDialogue(dialogue.currentDialogue);
+                book = true;
+            }
         }
+        else if (collider.CompareTag("Balloon"))
+        {
+            if (balloon == false)
+            {
+                GameObject BalloonObject = collider.gameObject;
+                dialogue.currentDialogue = BalloonObject.GetComponent<BalloonScript>().dialogue;
+                dialogue.DisplayDialogue(dialogue.currentDialogue);
+                balloon = true;
+            }
+        }
+        else if (collider.CompareTag("Bagel"))
+        {
+            if (bagels == false)
+            {
+                GameObject BagelObject = collider.gameObject;
+                dialogue.currentDialogue = BagelObject.GetComponent<BagelsScript>().dialogue;
+                dialogue.DisplayDialogue(dialogue.currentDialogue);
+                bagels = true;
+            }
+        }
+        else if (collider.CompareTag("Stairs"))
+        {
+            if (stairs == false)
+            {
+                GameObject StairsObject = collider.gameObject;
+                dialogue.currentDialogue = StairsObject.GetComponent<StairsScript>().dialogue;
+                dialogue.DisplayDialogue(dialogue.currentDialogue);
+                stairs = true;
+            }
+        }
+        else if (collider.CompareTag("Attic"))
+        {
+            if (attic == false)
+            {
+                GameObject AtticObject = collider.gameObject;
+                dialogue.currentDialogue = AtticObject.GetComponent<AtticScript>().dialogue;
+                dialogue.DisplayDialogue(dialogue.currentDialogue);
+                attic = true;
+            }
+        }
+        else if (collider.CompareTag("Amulet"))
+        {
+            if (amulet == false)
+            {
+                GameObject AmuletObject = collider.gameObject;
+                dialogue.currentDialogue = AmuletObject.GetComponent<AmuletScript>().dialogue;
+                dialogue.DisplayDialogue(dialogue.currentDialogue);
+                amulet = true;
+            }
+        }
+        // else if (collider.CompareTag("WhiteScreen") && desk == true)
+        // {
+        //     GameObject WhiteScreenObject = collider.gameObject;
+        //     WhiteScreenObject.SetActive(true);
+        //     SceneManager.LoadScene(2);
+        // }
+    }
+
+    private void OnTriggerStay2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Amulet") && Input.GetKeyDown(KeyCode.E))
+        {
+            if (amulet2 == false)
+            {
+                GameObject AmuletObject = collider.gameObject;
+                dialogue.currentDialogue = AmuletObject.GetComponent<AmuletScript>().dialogue2;
+                dialogue.DisplayDialogue(dialogue.currentDialogue);
+                amulet2 = true;
+                AmuletObject.SetActive(false);
+            }
+        }
+        else if (collider.CompareTag("Desk") && amulet2 == true)
+        {
+            if (desk == false)
+            {
+                GameObject DeskObject = collider.gameObject;
+                DeskObject.GetComponent<SpriteRenderer>().enabled = true;
+                desk = true;
+                // PickUpAmulet(DeskObject);
+                SceneManager.LoadScene(2);
+            }
+        }
+    }
+    private IEnumerable PickUpAmulet(GameObject Desk)
+    {
+        Debug.Log("Testing");
+        yield return new WaitForSeconds(3);
+        dialogue.currentDialogue = Desk.GetComponent<DeskScript>().dialogue;
+        dialogue.DisplayDialogue(dialogue.currentDialogue);
+        
     }
 }

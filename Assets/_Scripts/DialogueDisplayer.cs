@@ -12,11 +12,12 @@ public class DialogueDisplayer : MonoBehaviour
 
     private void Start()
     {
-        DisplayDialogue(currentDialogue);
+        // DisplayDialogue(currentDialogue);
     }
 
     private IEnumerator MoveThroughDialogue(DialogueObject dialogueObject)
     {
+        dialogueBox.SetActive(true);
         for (int i = 0; i < dialogueObject.dialogueLines.Length; i++)
         {
             dialogueText.text = dialogueObject.dialogueLines[i].dialogue;

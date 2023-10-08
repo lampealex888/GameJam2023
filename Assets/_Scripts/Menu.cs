@@ -9,6 +9,10 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void OnControlsButton()
+    {
+        SceneManager.LoadScene(8);
+    }
     public void OnQuitButton()
     {
         Application.Quit();

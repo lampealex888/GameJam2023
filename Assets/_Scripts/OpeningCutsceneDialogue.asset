@@ -38,9 +38,7 @@ MonoBehaviour:
     speaker: Grandpa
   - dialogue: "Okay Grandpa. I\u2019ll see you next Saturday though, right? \r"
     speaker: Kid
-  - dialogue: "*1 week passes*\r"
-    speaker: Narrator
   - dialogue: "But when I went back to Grandpa's house on Saturday, he wasn\u2019t
       there. He was just\u2026 gone. He promised. And Grandpa never breaks his promises.
-      I knew that something was wrong. Wherever he was, I needed to find him! \r"
-    speaker: Kid (to himself)
+      I knew that something was wrong. Wherever he was, I needed to find him! "
+    speaker: Kid

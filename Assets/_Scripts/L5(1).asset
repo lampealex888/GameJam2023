@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e098e0d803f20141828f694676357fc, type: 3}
+  m_Name: L5(1)
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - dialogue: "\u2026But he\u2019s not going to come back. When my parents told me
+      that I wasn\u2019t going to be able to see Grandpa Rick anymore, I didn\u2019t
+      want to believe them."
+    speaker: Carl
+  - dialogue: I just wanted to see my Grandpa again.
+    speaker: Carl
+  - dialogue: "I didn\u2019t want to think about the possibility that we\u2019d never
+      get to do any of our favorite things again."
+    speaker: Carl
+  - dialogue: "I wanted to hang out together at the house, to school with him for
+      Grandparents day, to the library to read books together and see planetarium
+      shows every weekend. But we can\u2019t. Because-"
+    speaker: Carl

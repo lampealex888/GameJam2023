@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e098e0d803f20141828f694676357fc, type: 3}
+  m_Name: L3(1)
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - dialogue: "Now where am I? It looks like\u2026 a library? Oh I know! This is
+      the town library! Grandpa used to bring me here all the time."
+    speaker: Carl
+  - dialogue: Grandpa Rick loved books and reading. I thought it was boring, though.
+    speaker: Carl
+  - dialogue: Every time that we would come to the library, Grandpa Rick would recommend
+      his favorite books to me and ask to read together, but I just ignored him.
+    speaker: Carl
+  - dialogue: I was more interested in playing on my DS.
+    speaker: Carl
+  - dialogue: "I was such a brat to him. But once I find my grandpa, I promise that
+      I won\u2019t complain when he wants to go to the library together!"
+    speaker: Carl
+  - dialogue: "I\u2019ll listen to all of his recommendations and read all the books
+      he wants me to!"
+    speaker: Carl
+  - dialogue: "I don\u2019t care how boring it is, as long as we\u2019re together."
+    speaker: Carl

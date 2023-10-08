@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Book
+  - Balloon
+  - Bagel
+  - Stairs
+  - Amulet
+  - Attic
+  - Desk
+  - WhiteScreen
   layers:
   - Default
   - TransparentFX

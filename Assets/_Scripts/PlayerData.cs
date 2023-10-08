@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement; // Add me!!
 public class PlayerData : MonoBehaviour
 {
     public DialogueDisplayer dialogue;
+    // Opener variables
+    private bool openerStart = false;
+    private bool openerEnd = false;
     // L1 variables
     private bool book = false;
     private bool balloon = false;
@@ -21,9 +24,32 @@ public class PlayerData : MonoBehaviour
     private bool keypad = false;
     private bool doorAClosed = false;
     private bool doorAOpen = false;
+    private bool end = false;
+    // L3 variables
+    private bool L3start = false;
+    private bool L3end = false;
+    // L4 variables
+    private bool L4start = false;
+    private bool L4end = false;
+    // L5 variables
+    private bool L5start = false;
+    private bool L5end = false;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        // Opener collisions
+        if (collider.CompareTag("OpenerEnd"))
+        {
+            if (openerEnd == false)
+            {
+                GameObject OpenerEndObject = collider.gameObject;
+                dialogue.currentDialogue = OpenerEndObject.GetComponent<OpenerEnd>().dialogue;
+                dialogue.DisplayDialogue(dialogue.currentDialogue);
+                openerEnd = true;
+                SceneManager.LoadScene(2);
+            }
+        }
+        // L1 collisions
         if (collider.CompareTag("Book"))
         {
             if (book == false)
@@ -84,14 +110,16 @@ public class PlayerData : MonoBehaviour
                 amulet = true;
             }
         }
-        else if (collider.CompareTag("L2Start"))
+        // L2 collisions
+        else if (collider.CompareTag("L2End"))
         {
-            if (start == false)
+            if (end == false)
             {
-                GameObject L2StartObject = collider.gameObject;
-                dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
-                dialogue.DisplayDialogue(dialogue.currentDialogue);
-                start = true;
+                // GameObject L2EndObject = collider.gameObject;
+                // dialogue.currentDialogue = L2EndObject.GetComponent<L2End>().dialogue;
+                // dialogue.DisplayDialogue(dialogue.currentDialogue);
+                end = true;
+                SceneManager.LoadScene(4);
             }
         }
         // else if (collider.CompareTag("WhiteScreen") && desk == true)
@@ -100,11 +128,59 @@ public class PlayerData : MonoBehaviour
         //     WhiteScreenObject.SetActive(true);
         //     SceneManager.LoadScene(2);
         // }
+        // L3 collisions
+        else if (collider.CompareTag("L3End"))
+        {
+            if (L3end == false)
+            {
+                // GameObject L2EndObject = collider.gameObject;
+                // dialogue.currentDialogue = L2EndObject.GetComponent<L2End>().dialogue;
+                // dialogue.DisplayDialogue(dialogue.currentDialogue);
+                L3end = true;
+                SceneManager.LoadScene(5);
+            }
+        }
+        // L4 collisions
+        else if (collider.CompareTag("L4End"))
+        {
+            if (L4end == false)
+            {
+                // GameObject L2EndObject = collider.gameObject;
+                // dialogue.currentDialogue = L2EndObject.GetComponent<L2End>().dialogue;
+                // dialogue.DisplayDialogue(dialogue.currentDialogue);
+                L4end = true;
+                SceneManager.LoadScene(6);
+            }
+        }
+        // L5 collisions
+        else if (collider.CompareTag("L5End"))
+        {
+            if (L5end == false)
+            {
+                // GameObject L2EndObject = collider.gameObject;
+                // dialogue.currentDialogue = L2EndObject.GetComponent<L2End>().dialogue;
+                // dialogue.DisplayDialogue(dialogue.currentDialogue);
+                L5end = true;
+                SceneManager.LoadScene(7);
+            }
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collider)
     {
-        if (collider.CompareTag("Amulet") && Input.GetKeyDown(KeyCode.E))
+        // Opener collisions
+        if (collider.CompareTag("OpenerStart"))
+        {
+            if (openerStart == false)
+            {
+                GameObject OpenerStartObject = collider.gameObject;
+                dialogue.currentDialogue = OpenerStartObject.GetComponent<OpenerStart>().dialogue;
+                dialogue.DisplayDialogue(dialogue.currentDialogue);
+                openerStart = true;
+            }
+        }
+        // L1 collisions
+        else if (collider.CompareTag("Amulet") && Input.GetKeyDown(KeyCode.E))
         {
             if (amulet2 == false)
             {
@@ -125,7 +201,20 @@ public class PlayerData : MonoBehaviour
                 // PickUpAmulet(DeskObject);
                 ability_unlocked = true;
                 this.GetComponent<MovementController>().IsOldMan = true;
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(3);
+            }
+        }
+        // L2 collisions
+        else if (collider.CompareTag("L2Start"))
+        {
+            if (start == false)
+            {
+                GameObject L2StartObject = collider.gameObject;
+                dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
+                dialogue.DisplayDialogue(dialogue.currentDialogue);
+                start = true;
+                ability_unlocked = true;
+                this.GetComponent<MovementController>().IsOldMan = true;
             }
         }
         // TODO: ADD CHECK IF PLAYER IS OLD
@@ -156,6 +245,42 @@ public class PlayerData : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.E))
             {
                 this.transform.position = new Vector3(28.23f, -2.7f, 0);
+            }
+        }
+        // L3 collisions
+        else if (collider.CompareTag("L3Start"))
+        {
+            if (L3start == false)
+            {
+                // GameObject L2StartObject = collider.gameObject;
+                // dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
+                // dialogue.DisplayDialogue(dialogue.currentDialogue);
+                L3start = true;
+                ability_unlocked = true;
+            }
+        }
+        // L4 collisions
+        else if (collider.CompareTag("L4Start"))
+        {
+            if (L4start == false)
+            {
+                // GameObject L2StartObject = collider.gameObject;
+                // dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
+                // dialogue.DisplayDialogue(dialogue.currentDialogue);
+                L4start = true;
+                ability_unlocked = true;
+            }
+        }
+        // L5 collisions
+        else if (collider.CompareTag("L5Start"))
+        {
+            if (L5start == false)
+            {
+                // GameObject L2StartObject = collider.gameObject;
+                // dialogue.currentDialogue = L2StartObject.GetComponent<L2StartScript>().dialogue;
+                // dialogue.DisplayDialogue(dialogue.currentDialogue);
+                L5start = true;
+                ability_unlocked = true;
             }
         }
     }

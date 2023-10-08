@@ -17,6 +17,15 @@ TagManager:
   - Jumping
   - DoorAClosed
   - DoorAOpen
+  - L2End
+  - OpenerStart
+  - OpenerEnd
+  - L3Start
+  - L3End
+  - L4Start
+  - L4End
+  - L5Start
+  - L5End
   layers:
   - Default
   - TransparentFX

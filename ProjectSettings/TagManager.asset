@@ -26,6 +26,9 @@ TagManager:
   - L4End
   - L5Start
   - L5End
+  - CorrectPlate
+  - Bolt
+  - LeverOff
   layers:
   - Default
   - TransparentFX

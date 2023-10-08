@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: New Dialogue Object
   m_EditorClassIdentifier: 
   dialogueLines:
-  - dialogue: 
-    speaker: 
+  - dialogue: Foo Bar
+    speaker: Bar Foo

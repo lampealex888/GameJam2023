@@ -12,6 +12,11 @@ TagManager:
   - Attic
   - Desk
   - WhiteScreen
+  - Keypad
+  - L2Start
+  - Jumping
+  - DoorAClosed
+  - DoorAOpen
   layers:
   - Default
   - TransparentFX

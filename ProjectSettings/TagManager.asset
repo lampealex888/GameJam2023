@@ -31,6 +31,9 @@ TagManager:
   - LeverOff
   - Gravestone
   - Globe
+  - L4desk
+  - L4amulet
+  - L4stairs
   layers:
   - Default
   - TransparentFX

@@ -63,7 +63,7 @@ public class MovementController : MonoBehaviour
         }
     }
 
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         //(box origin=center, size=box collider size, angle of rotation=0, direction to move box=down, distance to move box=.1f)
         RaycastHit2D raycastHit2d = Physics2D.BoxCast(boxCol2d.bounds.center, boxCol2d.bounds.size, 0f, Vector2.down, .1f, 1 << 7);

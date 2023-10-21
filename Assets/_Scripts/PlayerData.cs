@@ -27,6 +27,9 @@ public class PlayerData : MonoBehaviour
     private bool jumping = false;
     private bool transformed = false;
     private bool keypad = false;
+    private bool keypadDialogue = false;
+    private bool keypadDialogue2 = false;
+    private bool framedPicture = false;
     private bool doorAClosed = false;
     private bool doorAOpen = false;
     private bool end = false;
@@ -143,7 +146,27 @@ public class PlayerData : MonoBehaviour
                 break;
             // L2 collisions
             case 3:
-                
+                if (collider.CompareTag("Keypad"))
+                {
+                    if (keypadDialogue == false && this.GetComponent<MovementController>().IsOldMan == false)
+                    {
+                        GameObject KeypadObject = collider.gameObject;
+                        dialogue.currentDialogue = KeypadObject.GetComponent<KeypadScript>().dialogue;
+                        dialogue.DisplayDialogue(dialogue.currentDialogue);
+                        keypadDialogue = true;
+                    }
+                    
+                }
+                if (collider.CompareTag("FramedPicture"))
+                {
+                    if (framedPicture == false)
+                    {
+                        GameObject PictureObject = collider.gameObject;
+                        dialogue.currentDialogue = PictureObject.GetComponent<framedPicture>().dialogue;
+                        dialogue.DisplayDialogue(dialogue.currentDialogue);
+                        framedPicture = true;
+                    }
+                }
                 if (collider.CompareTag("L2End"))
                 {
                     if (end == false)
@@ -312,7 +335,7 @@ public class PlayerData : MonoBehaviour
                 }
                 else if (collider.CompareTag("Jumping"))
                 {
-                    if (this.GetComponent<MovementController>().IsGrounded() == false 
+                    if (this.GetComponent<MovementController>().IsGrounded() == false
                         && jumping == false && this.GetComponent<MovementController>().IsOldMan == true) {
                         GameObject JumpingObject = collider.gameObject;
                         dialogue.currentDialogue = JumpingObject.GetComponent<Jumping>().dialogue;
@@ -326,6 +349,14 @@ public class PlayerData : MonoBehaviour
                         dialogue.DisplayDialogue(dialogue.currentDialogue);
                         transformed = true;
                     }
+                }
+                else if (collider.CompareTag("Keypad") && this.GetComponent<MovementController>().IsOldMan == true 
+                    && keypadDialogue == true && keypadDialogue2 == false)
+                {
+                        GameObject KeypadObject = collider.gameObject;
+                        dialogue.currentDialogue = KeypadObject.GetComponent<KeypadScript>().dialogue2;
+                        dialogue.DisplayDialogue(dialogue.currentDialogue);
+                        keypadDialogue2 = true;
                 }
                 else if (collider.CompareTag("Keypad") && Input.GetKeyDown(KeyCode.E) && this.GetComponent<MovementController>().IsOldMan == true)
                 {

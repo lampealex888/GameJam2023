@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeypadScript : MonoBehaviour
+public class framedPicture : MonoBehaviour
 {
     public DialogueObject dialogue;
-    public DialogueObject dialogue2;
 }
